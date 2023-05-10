@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "calculator_proyect_backend": {
+      "main": "src/calculator_proyect_backend/main.mo",
+      "type": "motoko"
+    },
+    "calculator_proyect_frontend": {
+      "dependencies": [
+        "calculator_proyect_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/calculator_proyect_frontend/src/index.html"
+      },
+      "source": [
+        "src/calculator_proyect_frontend/assets",
+        "dist/calculator_proyect_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
